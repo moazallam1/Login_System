@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/register.css" />
+  </head>
+  <body>
+<form id="registerForm" class="register-form">
+    <div class="container  text-center mx-auto my-5">
+        <div class="text-info mx-auto w-75  shadow-lg p-5">
+            <h1 class="mb-4 text-info">Smart Login System</h1>
+
+                <input type="text" class=" mb-3 form-control" id="signName" placeholder="Enter Your Name">    
+                <p id="nameAlert" class="d-none alert alert-danger p-1">The Name Should Contain Only English Letters Without Numbers Or Special Characters</p>
+                <input type="email" class=" mb-3 form-control" id="signEmail" placeholder="Enter Your Email">    
+                <p id="existAlert" class="d-none alert alert-danger p-1">Email Is Already Exist</p>              
+                <p id="emailAlert" class="d-none alert alert-danger p-1">Please Enter A Valid Email... (e.g., example@domain.com)</p>          
+                <input type="password" class=" mb-3 form-control" id="signPassword" placeholder="Enter Password"> 
+                <p id="passwordAlert" class="d-none alert alert-danger p-1"> Password must be 8-20 characters long,<br> containing at least one lowercase letter,<br> one uppercase letter,<br> one number,<br> and one special character</p>
+                
+                <p id="successAlert" class="d-none alert alert-success p-1">You Have Signed Up</p>
+
+                
+                <button class="btn btn-outline-info w-100">Sign Up </button>
+                <p class=" text-white">You have an account? <a href="./index.html" class="text-info">Signin</a></p>
+        </div>
+    </div>
+</form>
+    <script src="./JS/bootstrap.bundle.js"></script>
+    <script src="./JS/register.js"></script>
+  </body>
+</html>
